@@ -11,6 +11,6 @@ index = email.index("@")
 
 # create two new vars
 username = email[:index]
-domain = email[index:]
+domain = email[index + 1:] # to get rid of @ symbol
 
 print(f'Username is {username} and Domain is {domain}')
